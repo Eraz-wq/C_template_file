@@ -1,7 +1,8 @@
+#ifndef C_TEMPLATE_FUNCTIONS_H
+#define C_TEMPLATE_FUNCTIONS_H
+
 #include <string>
 
-#ifndef TEMPLATE_FUNCTIONS
-#define TEMPLATE_FUNCTIONS
-void RepeatTyped(int num, std::ostream& ouput, const std::string str);
+void RepeatTyped(int num, std::ostream& ouput, const std::string& str);
 
 #endif
