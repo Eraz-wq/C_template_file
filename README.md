@@ -6,5 +6,5 @@ moves the C++ into the newly created file.
 
 ## Instructions
 
-Run the program and enter two arguments: 
+Enter two arguments and run the program: 
 ```./a.out folder_name file_template_name```
