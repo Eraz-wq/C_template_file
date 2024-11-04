@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
   fs::create_directories(fpath / user_create_folder);
 
   std::string user_create_file{command_line.at(2)};
-  std::ofstream output_f{user_create_file+".cc"};
+  std::ofstream output_f{user_create_file + ".cc"};
 
   if (!output_f) {
     std::cerr << "file could not be opened" << std::endl;
@@ -40,12 +40,11 @@ int main(int argc, char* argv[]) {
   }
   output_f.close();
 
-  std::string file_current{"C_template_file/"+user_create_file+".cc"};
-  std::string file_destination{user_create_folder+"/"+user_create_file+".cc"};
+  std::string file_current{"C_template_file/" + user_create_file + ".cc"};
+  std::string file_destination{user_create_folder + "/" + user_create_file +
+                               ".cc"};
 
-  fs::rename(fpath / file_current, fpath /file_destination);
-
-
+  fs::rename(fpath / file_current, fpath / file_destination);
 
   return 0;
 }
